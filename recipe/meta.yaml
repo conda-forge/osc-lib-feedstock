@@ -1,18 +1,18 @@
 {% set name = "osc-lib" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: b1cd4467b72a73f7a4de51789581f63de6b93f0e0d15e916191aa26234b01ffa
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 697d08204a59933035ac246fbc8c8e5453b846b4a8875ed7a9e9caba769b1b57
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -43,7 +43,7 @@ about:
   license: Apache Software
   license_family: APACHE
   license_file: LICENSE
-  summary: "OpenStackClient Library"
+  summary: OpenStackClient Library
   doc_url: https://docs.openstack.org/osc-lib/latest/
   dev_url: https://opendev.org/openstack/osc-lib
 
