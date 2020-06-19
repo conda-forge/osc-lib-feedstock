@@ -10,7 +10,7 @@ source:
   sha256: fcfce4d63a633c3161e2a6666764446e3f32668e814a94ab98da12e3908ee1d6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,16 +21,16 @@ requirements:
     - python >=3.6
     - setuptools
   run:
-    - cliff
-    - keystoneauth1
-    - openstacksdk
-    - oslo.i18n
-    - oslo.utils
+    - cliff >=3.2.0
+    - keystoneauth1 >=3.14.0
+    - openstacksdk >=0.15.0
+    - oslo.i18n >=3.15.3
+    - oslo.utils >=3.33.0
     - pbr
     - python >=3.6
     - setuptools
-    - simplejson
-    - stevedore
+    - simplejson >=3.5.1
+    - stevedore >=1.20.0
 
 test:
   imports:
