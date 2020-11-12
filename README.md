@@ -5,11 +5,13 @@ Home: https://opendev.org/openstack/osc-lib
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/osc-lib-feedstock/blob/master/LICENSE.txt)
 
 Summary: OpenStackClient Library
 
+Development: https://opendev.org/openstack/osc-lib
 
+Documentation: https://docs.openstack.org/osc-lib/latest/
 
 Current build status
 ====================
