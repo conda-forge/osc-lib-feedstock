@@ -1,5 +1,5 @@
 {% set name = "osc-lib" %}
-{% set version = "2.2.1" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d969891040de0804b5126fa4c476ec1f4ec1475096907096971fd40d989e0ad2
+  sha256: ee4f8b6989d3a3fb1021a6a32665000b1db27e615a0ab5c86c35eb59c90003f1
 
 build:
   number: 0
