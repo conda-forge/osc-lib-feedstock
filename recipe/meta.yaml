@@ -1,5 +1,5 @@
 {% set name = "osc-lib" %}
-{% set version = "4.2.0" %}
+{% set version = "4.3.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 99718f06a990c1ad6fb9034bbed9655390a2ea83cef71a53781e7e9abd9f20ce
+  sha256: 4f7f682c0e7df187aecba5bbbb5ee64796a2da03d23cba981245bdc27f6f8b97
 
 build:
   number: 0
